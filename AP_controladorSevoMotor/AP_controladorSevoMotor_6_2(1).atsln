@@ -1,0 +1,20 @@
+
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Atmel Studio Solution File, Format Version 11.00
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "AP_controladorSevoMotor", "AP_controladorSevoMotor_6_2(1).cproj", "{DA01484A-5228-48C9-97A4-F233B42189F8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DA01484A-5228-48C9-97A4-F233B42189F8}.Debug|AVR.ActiveCfg = Debug|AVR
+		{DA01484A-5228-48C9-97A4-F233B42189F8}.Debug|AVR.Build.0 = Debug|AVR
+		{DA01484A-5228-48C9-97A4-F233B42189F8}.Release|AVR.ActiveCfg = Release|AVR
+		{DA01484A-5228-48C9-97A4-F233B42189F8}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
