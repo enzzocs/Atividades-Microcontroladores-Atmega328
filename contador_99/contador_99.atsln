@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Atmel Studio Solution File, Format Version 11.00
+Project("{18226A42-8477-4023-8AD2-40C49DA407C9}") = "contador_99", "contador_99\contador_99.asmproj", "{9424551D-12FF-45D8-BC58-B879A56A9966}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9424551D-12FF-45D8-BC58-B879A56A9966}.Debug|AVR.ActiveCfg = Debug|AVR
+		{9424551D-12FF-45D8-BC58-B879A56A9966}.Debug|AVR.Build.0 = Debug|AVR
+		{9424551D-12FF-45D8-BC58-B879A56A9966}.Release|AVR.ActiveCfg = Release|AVR
+		{9424551D-12FF-45D8-BC58-B879A56A9966}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

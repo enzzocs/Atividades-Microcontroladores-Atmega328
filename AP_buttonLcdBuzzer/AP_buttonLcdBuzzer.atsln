@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Atmel Studio Solution File, Format Version 11.00
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "AP_buttonLcdBuzzer", "AP_buttonLcdBuzzer.cproj", "{166A3924-4940-47D7-B1A1-2D80E77382B6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{166A3924-4940-47D7-B1A1-2D80E77382B6}.Debug|AVR.ActiveCfg = Debug|AVR
+		{166A3924-4940-47D7-B1A1-2D80E77382B6}.Debug|AVR.Build.0 = Debug|AVR
+		{166A3924-4940-47D7-B1A1-2D80E77382B6}.Release|AVR.ActiveCfg = Release|AVR
+		{166A3924-4940-47D7-B1A1-2D80E77382B6}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

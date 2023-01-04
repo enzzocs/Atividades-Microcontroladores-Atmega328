@@ -1,0 +1,73 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.57</VERSION>
+ <DEVICE>"ATmega328P"</DEVICE>
+ <WORKING_DIR>C:\Users\Maria Negri\Desktop\exercicio3\exercicio3\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR Assembler\Native\2.1.1175\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\Maria Negri\Desktop\exercicio3\exercicio3\exercicio3.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR Assembler\Native\2.1.1175\avrassembler\Include\m328Pdef.inc</FILE>
+  <FILE>C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR Assembler\Native\2.1.1175\avrassembler\Include\m328pdef.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\Maria Negri\Desktop\exercicio3\exercicio3\Debug/exercicio3.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>exercicio3.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>exercicio3.map</FILE>
+  <FILE>exercicio3.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <resetHandler><FILE>C:\Users\Maria Negri\Desktop\exercicio3\exercicio3\exercicio3.asm</FILE><LINE>363</LINE></resetHandler>
+  <int0Handler><FILE>C:\Users\Maria Negri\Desktop\exercicio3\exercicio3\exercicio3.asm</FILE><LINE>338</LINE></int0Handler>
+  <int1Handler><FILE>C:\Users\Maria Negri\Desktop\exercicio3\exercicio3\exercicio3.asm</FILE><LINE>339</LINE></int1Handler>
+  <pcint0Handler><FILE>C:\Users\Maria Negri\Desktop\exercicio3\exercicio3\exercicio3.asm</FILE><LINE>340</LINE></pcint0Handler>
+  <pcint1Handler><FILE>C:\Users\Maria Negri\Desktop\exercicio3\exercicio3\exercicio3.asm</FILE><LINE>341</LINE></pcint1Handler>
+  <pcint2Handler><FILE>C:\Users\Maria Negri\Desktop\exercicio3\exercicio3\exercicio3.asm</FILE><LINE>342</LINE></pcint2Handler>
+  <wdtHandler><FILE>C:\Users\Maria Negri\Desktop\exercicio3\exercicio3\exercicio3.asm</FILE><LINE>343</LINE></wdtHandler>
+  <timer2CompAHandler><FILE>C:\Users\Maria Negri\Desktop\exercicio3\exercicio3\exercicio3.asm</FILE><LINE>344</LINE></timer2CompAHandler>
+  <timer2CompBHandler><FILE>C:\Users\Maria Negri\Desktop\exercicio3\exercicio3\exercicio3.asm</FILE><LINE>345</LINE></timer2CompBHandler>
+  <timer2OvfHandler><FILE>C:\Users\Maria Negri\Desktop\exercicio3\exercicio3\exercicio3.asm</FILE><LINE>346</LINE></timer2OvfHandler>
+  <timer1CaptureHandler><FILE>C:\Users\Maria Negri\Desktop\exercicio3\exercicio3\exercicio3.asm</FILE><LINE>347</LINE></timer1CaptureHandler>
+  <timer1CompAHandler><FILE>C:\Users\Maria Negri\Desktop\exercicio3\exercicio3\exercicio3.asm</FILE><LINE>348</LINE></timer1CompAHandler>
+  <timer1CompBHandler><FILE>C:\Users\Maria Negri\Desktop\exercicio3\exercicio3\exercicio3.asm</FILE><LINE>349</LINE></timer1CompBHandler>
+  <timer1OvfHandler><FILE>C:\Users\Maria Negri\Desktop\exercicio3\exercicio3\exercicio3.asm</FILE><LINE>350</LINE></timer1OvfHandler>
+  <timer0CompAHandler><FILE>C:\Users\Maria Negri\Desktop\exercicio3\exercicio3\exercicio3.asm</FILE><LINE>351</LINE></timer0CompAHandler>
+  <timer0CompBHandler><FILE>C:\Users\Maria Negri\Desktop\exercicio3\exercicio3\exercicio3.asm</FILE><LINE>352</LINE></timer0CompBHandler>
+  <timer0OvfHandler><FILE>C:\Users\Maria Negri\Desktop\exercicio3\exercicio3\exercicio3.asm</FILE><LINE>353</LINE></timer0OvfHandler>
+  <spiHandler><FILE>C:\Users\Maria Negri\Desktop\exercicio3\exercicio3\exercicio3.asm</FILE><LINE>354</LINE></spiHandler>
+  <usartRxHandler><FILE>C:\Users\Maria Negri\Desktop\exercicio3\exercicio3\exercicio3.asm</FILE><LINE>355</LINE></usartRxHandler>
+  <usartDataEmptyHandler><FILE>C:\Users\Maria Negri\Desktop\exercicio3\exercicio3\exercicio3.asm</FILE><LINE>356</LINE></usartDataEmptyHandler>
+  <usartTxHandler><FILE>C:\Users\Maria Negri\Desktop\exercicio3\exercicio3\exercicio3.asm</FILE><LINE>357</LINE></usartTxHandler>
+  <adcHandler><FILE>C:\Users\Maria Negri\Desktop\exercicio3\exercicio3\exercicio3.asm</FILE><LINE>358</LINE></adcHandler>
+  <eepromHandler><FILE>C:\Users\Maria Negri\Desktop\exercicio3\exercicio3\exercicio3.asm</FILE><LINE>359</LINE></eepromHandler>
+  <analogCompHandler><FILE>C:\Users\Maria Negri\Desktop\exercicio3\exercicio3\exercicio3.asm</FILE><LINE>360</LINE></analogCompHandler>
+  <twiHandler><FILE>C:\Users\Maria Negri\Desktop\exercicio3\exercicio3\exercicio3.asm</FILE><LINE>361</LINE></twiHandler>
+  <flashHandler><FILE>C:\Users\Maria Negri\Desktop\exercicio3\exercicio3\exercicio3.asm</FILE><LINE>362</LINE></flashHandler>
+  <main><FILE>C:\Users\Maria Negri\Desktop\exercicio3\exercicio3\exercicio3.asm</FILE><LINE>109</LINE></main>
+  <empilhamento><FILE>C:\Users\Maria Negri\Desktop\exercicio3\exercicio3\exercicio3.asm</FILE><LINE>117</LINE></empilhamento>
+  <contador><FILE>C:\Users\Maria Negri\Desktop\exercicio3\exercicio3\exercicio3.asm</FILE><LINE>125</LINE></contador>
+  <verificador><FILE>C:\Users\Maria Negri\Desktop\exercicio3\exercicio3\exercicio3.asm</FILE><LINE>136</LINE></verificador>
+  <delay100ms><FILE>C:\Users\Maria Negri\Desktop\exercicio3\exercicio3\exercicio3.asm</FILE><LINE>273</LINE></delay100ms>
+  <zero><FILE>C:\Users\Maria Negri\Desktop\exercicio3\exercicio3\exercicio3.asm</FILE><LINE>195</LINE></zero>
+  <um><FILE>C:\Users\Maria Negri\Desktop\exercicio3\exercicio3\exercicio3.asm</FILE><LINE>200</LINE></um>
+  <dois><FILE>C:\Users\Maria Negri\Desktop\exercicio3\exercicio3\exercicio3.asm</FILE><LINE>205</LINE></dois>
+  <tres><FILE>C:\Users\Maria Negri\Desktop\exercicio3\exercicio3\exercicio3.asm</FILE><LINE>210</LINE></tres>
+  <quatro><FILE>C:\Users\Maria Negri\Desktop\exercicio3\exercicio3\exercicio3.asm</FILE><LINE>215</LINE></quatro>
+  <cinco><FILE>C:\Users\Maria Negri\Desktop\exercicio3\exercicio3\exercicio3.asm</FILE><LINE>220</LINE></cinco>
+  <seis><FILE>C:\Users\Maria Negri\Desktop\exercicio3\exercicio3\exercicio3.asm</FILE><LINE>225</LINE></seis>
+  <sete><FILE>C:\Users\Maria Negri\Desktop\exercicio3\exercicio3\exercicio3.asm</FILE><LINE>230</LINE></sete>
+  <oito><FILE>C:\Users\Maria Negri\Desktop\exercicio3\exercicio3\exercicio3.asm</FILE><LINE>235</LINE></oito>
+  <nove><FILE>C:\Users\Maria Negri\Desktop\exercicio3\exercicio3\exercicio3.asm</FILE><LINE>240</LINE></nove>
+  <volta><FILE>C:\Users\Maria Negri\Desktop\exercicio3\exercicio3\exercicio3.asm</FILE><LINE>160</LINE></volta>
+  <volta2><FILE>C:\Users\Maria Negri\Desktop\exercicio3\exercicio3\exercicio3.asm</FILE><LINE>163</LINE></volta2>
+  <sair><FILE>C:\Users\Maria Negri\Desktop\exercicio3\exercicio3\exercicio3.asm</FILE><LINE>173</LINE></sair>
+  <carry><FILE>C:\Users\Maria Negri\Desktop\exercicio3\exercicio3\exercicio3.asm</FILE><LINE>185</LINE></carry>
+  <continue><FILE>C:\Users\Maria Negri\Desktop\exercicio3\exercicio3\exercicio3.asm</FILE><LINE>169</LINE></continue>
+  <delay100msLoop><FILE>C:\Users\Maria Negri\Desktop\exercicio3\exercicio3\exercicio3.asm</FILE><LINE>281</LINE></delay100msLoop>
+ </LABELS>
+</ASSEMBLER_INFO>

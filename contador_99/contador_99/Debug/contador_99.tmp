@@ -1,0 +1,75 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.57</VERSION>
+ <DEVICE>"ATmega328P"</DEVICE>
+ <WORKING_DIR>C:\Users\Maria Negri\Desktop\contador_99\contador_99\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR Assembler\Native\2.1.1175\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\Maria Negri\Desktop\contador_99\contador_99\contador_99.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR Assembler\Native\2.1.1175\avrassembler\Include\m328Pdef.inc</FILE>
+  <FILE>C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR Assembler\Native\2.1.1175\avrassembler\Include\m328pdef.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\Maria Negri\Desktop\contador_99\contador_99\Debug/contador_99.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>contador_99.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>contador_99.map</FILE>
+  <FILE>contador_99.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <resetHandler><FILE>C:\Users\Maria Negri\Desktop\contador_99\contador_99\contador_99.asm</FILE><LINE>306</LINE></resetHandler>
+  <int0Handler><FILE>C:\Users\Maria Negri\Desktop\contador_99\contador_99\contador_99.asm</FILE><LINE>281</LINE></int0Handler>
+  <int1Handler><FILE>C:\Users\Maria Negri\Desktop\contador_99\contador_99\contador_99.asm</FILE><LINE>282</LINE></int1Handler>
+  <pcint0Handler><FILE>C:\Users\Maria Negri\Desktop\contador_99\contador_99\contador_99.asm</FILE><LINE>283</LINE></pcint0Handler>
+  <pcint1Handler><FILE>C:\Users\Maria Negri\Desktop\contador_99\contador_99\contador_99.asm</FILE><LINE>284</LINE></pcint1Handler>
+  <pcint2Handler><FILE>C:\Users\Maria Negri\Desktop\contador_99\contador_99\contador_99.asm</FILE><LINE>285</LINE></pcint2Handler>
+  <wdtHandler><FILE>C:\Users\Maria Negri\Desktop\contador_99\contador_99\contador_99.asm</FILE><LINE>286</LINE></wdtHandler>
+  <timer2CompAHandler><FILE>C:\Users\Maria Negri\Desktop\contador_99\contador_99\contador_99.asm</FILE><LINE>287</LINE></timer2CompAHandler>
+  <timer2CompBHandler><FILE>C:\Users\Maria Negri\Desktop\contador_99\contador_99\contador_99.asm</FILE><LINE>288</LINE></timer2CompBHandler>
+  <timer2OvfHandler><FILE>C:\Users\Maria Negri\Desktop\contador_99\contador_99\contador_99.asm</FILE><LINE>289</LINE></timer2OvfHandler>
+  <timer1CaptureHandler><FILE>C:\Users\Maria Negri\Desktop\contador_99\contador_99\contador_99.asm</FILE><LINE>290</LINE></timer1CaptureHandler>
+  <timer1CompAHandler><FILE>C:\Users\Maria Negri\Desktop\contador_99\contador_99\contador_99.asm</FILE><LINE>291</LINE></timer1CompAHandler>
+  <timer1CompBHandler><FILE>C:\Users\Maria Negri\Desktop\contador_99\contador_99\contador_99.asm</FILE><LINE>292</LINE></timer1CompBHandler>
+  <timer1OvfHandler><FILE>C:\Users\Maria Negri\Desktop\contador_99\contador_99\contador_99.asm</FILE><LINE>293</LINE></timer1OvfHandler>
+  <timer0CompAHandler><FILE>C:\Users\Maria Negri\Desktop\contador_99\contador_99\contador_99.asm</FILE><LINE>294</LINE></timer0CompAHandler>
+  <timer0CompBHandler><FILE>C:\Users\Maria Negri\Desktop\contador_99\contador_99\contador_99.asm</FILE><LINE>295</LINE></timer0CompBHandler>
+  <timer0OvfHandler><FILE>C:\Users\Maria Negri\Desktop\contador_99\contador_99\contador_99.asm</FILE><LINE>296</LINE></timer0OvfHandler>
+  <spiHandler><FILE>C:\Users\Maria Negri\Desktop\contador_99\contador_99\contador_99.asm</FILE><LINE>297</LINE></spiHandler>
+  <usartRxHandler><FILE>C:\Users\Maria Negri\Desktop\contador_99\contador_99\contador_99.asm</FILE><LINE>298</LINE></usartRxHandler>
+  <usartDataEmptyHandler><FILE>C:\Users\Maria Negri\Desktop\contador_99\contador_99\contador_99.asm</FILE><LINE>299</LINE></usartDataEmptyHandler>
+  <usartTxHandler><FILE>C:\Users\Maria Negri\Desktop\contador_99\contador_99\contador_99.asm</FILE><LINE>300</LINE></usartTxHandler>
+  <adcHandler><FILE>C:\Users\Maria Negri\Desktop\contador_99\contador_99\contador_99.asm</FILE><LINE>301</LINE></adcHandler>
+  <eepromHandler><FILE>C:\Users\Maria Negri\Desktop\contador_99\contador_99\contador_99.asm</FILE><LINE>302</LINE></eepromHandler>
+  <analogCompHandler><FILE>C:\Users\Maria Negri\Desktop\contador_99\contador_99\contador_99.asm</FILE><LINE>303</LINE></analogCompHandler>
+  <twiHandler><FILE>C:\Users\Maria Negri\Desktop\contador_99\contador_99\contador_99.asm</FILE><LINE>304</LINE></twiHandler>
+  <flashHandler><FILE>C:\Users\Maria Negri\Desktop\contador_99\contador_99\contador_99.asm</FILE><LINE>305</LINE></flashHandler>
+  <main><FILE>C:\Users\Maria Negri\Desktop\contador_99\contador_99\contador_99.asm</FILE><LINE>98</LINE></main>
+  <mainLoop><FILE>C:\Users\Maria Negri\Desktop\contador_99\contador_99\contador_99.asm</FILE><LINE>101</LINE></mainLoop>
+  <decodificar><FILE>C:\Users\Maria Negri\Desktop\contador_99\contador_99\contador_99.asm</FILE><LINE>144</LINE></decodificar>
+  <func595><FILE>C:\Users\Maria Negri\Desktop\contador_99\contador_99\contador_99.asm</FILE><LINE>220</LINE></func595>
+  <contador2><FILE>C:\Users\Maria Negri\Desktop\contador_99\contador_99\contador_99.asm</FILE><LINE>125</LINE></contador2>
+  <contar><FILE>C:\Users\Maria Negri\Desktop\contador_99\contador_99\contador_99.asm</FILE><LINE>135</LINE></contar>
+  <delay100ms><FILE>C:\Users\Maria Negri\Desktop\contador_99\contador_99\contador_99.asm</FILE><LINE>255</LINE></delay100ms>
+  <zero><FILE>C:\Users\Maria Negri\Desktop\contador_99\contador_99\contador_99.asm</FILE><LINE>170</LINE></zero>
+  <um><FILE>C:\Users\Maria Negri\Desktop\contador_99\contador_99\contador_99.asm</FILE><LINE>174</LINE></um>
+  <dois><FILE>C:\Users\Maria Negri\Desktop\contador_99\contador_99\contador_99.asm</FILE><LINE>178</LINE></dois>
+  <tres><FILE>C:\Users\Maria Negri\Desktop\contador_99\contador_99\contador_99.asm</FILE><LINE>182</LINE></tres>
+  <quatro><FILE>C:\Users\Maria Negri\Desktop\contador_99\contador_99\contador_99.asm</FILE><LINE>186</LINE></quatro>
+  <cinco><FILE>C:\Users\Maria Negri\Desktop\contador_99\contador_99\contador_99.asm</FILE><LINE>190</LINE></cinco>
+  <seis><FILE>C:\Users\Maria Negri\Desktop\contador_99\contador_99\contador_99.asm</FILE><LINE>194</LINE></seis>
+  <sete><FILE>C:\Users\Maria Negri\Desktop\contador_99\contador_99\contador_99.asm</FILE><LINE>198</LINE></sete>
+  <oito><FILE>C:\Users\Maria Negri\Desktop\contador_99\contador_99\contador_99.asm</FILE><LINE>202</LINE></oito>
+  <nove><FILE>C:\Users\Maria Negri\Desktop\contador_99\contador_99\contador_99.asm</FILE><LINE>206</LINE></nove>
+  <fim_decodificar><FILE>C:\Users\Maria Negri\Desktop\contador_99\contador_99\contador_99.asm</FILE><LINE>210</LINE></fim_decodificar>
+  <volta2><FILE>C:\Users\Maria Negri\Desktop\contador_99\contador_99\contador_99.asm</FILE><LINE>226</LINE></volta2>
+  <sair><FILE>C:\Users\Maria Negri\Desktop\contador_99\contador_99\contador_99.asm</FILE><LINE>236</LINE></sair>
+  <carry><FILE>C:\Users\Maria Negri\Desktop\contador_99\contador_99\contador_99.asm</FILE><LINE>243</LINE></carry>
+  <continue><FILE>C:\Users\Maria Negri\Desktop\contador_99\contador_99\contador_99.asm</FILE><LINE>232</LINE></continue>
+  <delay100msLoop><FILE>C:\Users\Maria Negri\Desktop\contador_99\contador_99\contador_99.asm</FILE><LINE>263</LINE></delay100msLoop>
+ </LABELS>
+</ASSEMBLER_INFO>
