@@ -1,0 +1,1016 @@
+
+controlador.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         000004ce  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .bss          00000003  00800100  00800100  00000542  2**0
+                  ALLOC
+  2 .comment      00000030  00000000  00000000  00000542  2**0
+                  CONTENTS, READONLY
+  3 .debug_aranges 000005d8  00000000  00000000  00000572  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  4 .debug_info   00002ae9  00000000  00000000  00000b4a  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_abbrev 00000534  00000000  00000000  00003633  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_line   0000116a  00000000  00000000  00003b67  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_frame  00000c34  00000000  00000000  00004cd4  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_str    000023b9  00000000  00000000  00005908  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_loc    000016c8  00000000  00000000  00007cc1  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_ranges 000005d8  00000000  00000000  00009389  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 3b 00 	jmp	0x76	; 0x76 <__ctors_end>
+   4:	0c 94 58 00 	jmp	0xb0	; 0xb0 <__bad_interrupt>
+   8:	0c 94 58 00 	jmp	0xb0	; 0xb0 <__bad_interrupt>
+   c:	0c 94 58 00 	jmp	0xb0	; 0xb0 <__bad_interrupt>
+  10:	0c 94 58 00 	jmp	0xb0	; 0xb0 <__bad_interrupt>
+  14:	0c 94 58 00 	jmp	0xb0	; 0xb0 <__bad_interrupt>
+  18:	0c 94 58 00 	jmp	0xb0	; 0xb0 <__bad_interrupt>
+  1c:	0c 94 58 00 	jmp	0xb0	; 0xb0 <__bad_interrupt>
+  20:	0c 94 58 00 	jmp	0xb0	; 0xb0 <__bad_interrupt>
+  24:	0c 94 58 00 	jmp	0xb0	; 0xb0 <__bad_interrupt>
+  28:	0c 94 58 00 	jmp	0xb0	; 0xb0 <__bad_interrupt>
+  2c:	0c 94 58 00 	jmp	0xb0	; 0xb0 <__bad_interrupt>
+  30:	0c 94 58 00 	jmp	0xb0	; 0xb0 <__bad_interrupt>
+  34:	0c 94 58 00 	jmp	0xb0	; 0xb0 <__bad_interrupt>
+  38:	0c 94 58 00 	jmp	0xb0	; 0xb0 <__bad_interrupt>
+  3c:	0c 94 58 00 	jmp	0xb0	; 0xb0 <__bad_interrupt>
+  40:	0c 94 58 00 	jmp	0xb0	; 0xb0 <__bad_interrupt>
+  44:	0c 94 58 00 	jmp	0xb0	; 0xb0 <__bad_interrupt>
+  48:	0c 94 58 00 	jmp	0xb0	; 0xb0 <__bad_interrupt>
+  4c:	0c 94 58 00 	jmp	0xb0	; 0xb0 <__bad_interrupt>
+  50:	0c 94 58 00 	jmp	0xb0	; 0xb0 <__bad_interrupt>
+  54:	0c 94 ee 01 	jmp	0x3dc	; 0x3dc <__vector_21>
+  58:	0c 94 58 00 	jmp	0xb0	; 0xb0 <__bad_interrupt>
+  5c:	0c 94 58 00 	jmp	0xb0	; 0xb0 <__bad_interrupt>
+  60:	0c 94 58 00 	jmp	0xb0	; 0xb0 <__bad_interrupt>
+  64:	0c 94 58 00 	jmp	0xb0	; 0xb0 <__bad_interrupt>
+  68:	b9 00       	.word	0x00b9	; ????
+  6a:	bb 00       	.word	0x00bb	; ????
+  6c:	bd 00       	.word	0x00bd	; ????
+  6e:	bf 00       	.word	0x00bf	; ????
+  70:	c1 00       	.word	0x00c1	; ????
+  72:	c3 00       	.word	0x00c3	; ????
+  74:	c5 00       	.word	0x00c5	; ????
+
+00000076 <__ctors_end>:
+  76:	11 24       	eor	r1, r1
+  78:	1f be       	out	0x3f, r1	; 63
+  7a:	cf ef       	ldi	r28, 0xFF	; 255
+  7c:	d8 e0       	ldi	r29, 0x08	; 8
+  7e:	de bf       	out	0x3e, r29	; 62
+  80:	cd bf       	out	0x3d, r28	; 61
+
+00000082 <__do_copy_data>:
+  82:	11 e0       	ldi	r17, 0x01	; 1
+  84:	a0 e0       	ldi	r26, 0x00	; 0
+  86:	b1 e0       	ldi	r27, 0x01	; 1
+  88:	ee ec       	ldi	r30, 0xCE	; 206
+  8a:	f4 e0       	ldi	r31, 0x04	; 4
+  8c:	02 c0       	rjmp	.+4      	; 0x92 <__do_copy_data+0x10>
+  8e:	05 90       	lpm	r0, Z+
+  90:	0d 92       	st	X+, r0
+  92:	a0 30       	cpi	r26, 0x00	; 0
+  94:	b1 07       	cpc	r27, r17
+  96:	d9 f7       	brne	.-10     	; 0x8e <__do_copy_data+0xc>
+
+00000098 <__do_clear_bss>:
+  98:	21 e0       	ldi	r18, 0x01	; 1
+  9a:	a0 e0       	ldi	r26, 0x00	; 0
+  9c:	b1 e0       	ldi	r27, 0x01	; 1
+  9e:	01 c0       	rjmp	.+2      	; 0xa2 <.do_clear_bss_start>
+
+000000a0 <.do_clear_bss_loop>:
+  a0:	1d 92       	st	X+, r1
+
+000000a2 <.do_clear_bss_start>:
+  a2:	a3 30       	cpi	r26, 0x03	; 3
+  a4:	b2 07       	cpc	r27, r18
+  a6:	e1 f7       	brne	.-8      	; 0xa0 <.do_clear_bss_loop>
+  a8:	0e 94 ae 01 	call	0x35c	; 0x35c <main>
+  ac:	0c 94 65 02 	jmp	0x4ca	; 0x4ca <_exit>
+
+000000b0 <__bad_interrupt>:
+  b0:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+000000b4 <timer1Config>:
+ * Configures the timer1 mode and prescaler
+ * -------------------------------------------------------------------------- */
+
+resultValue_t timer1Config(timerModeB_t mode, timerPrescalerValueA_t prescaler)
+{
+	uint8 reg1 = TCCR1A;
+  b4:	20 91 80 00 	lds	r18, 0x0080
+	uint8 reg2 = TCCR1B;
+  b8:	90 91 81 00 	lds	r25, 0x0081
+
+	if(prescaler != TIMER_A_PRESCALER_NO_CHANGE){
+  bc:	6f 3f       	cpi	r22, 0xFF	; 255
+  be:	11 f0       	breq	.+4      	; 0xc4 <timer1Config+0x10>
+		reg2 &= ~(0x07 << CS10);
+  c0:	98 7f       	andi	r25, 0xF8	; 248
+		reg2 |= prescaler;
+  c2:	96 2b       	or	r25, r22
+	}
+
+	if(mode != TIMER_B_MODE_NO_CHANGE){
+  c4:	8f 3f       	cpi	r24, 0xFF	; 255
+  c6:	69 f0       	breq	.+26     	; 0xe2 <timer1Config+0x2e>
+		if(isBitSet(mode, 3))
+  c8:	83 ff       	sbrs	r24, 3
+  ca:	02 c0       	rjmp	.+4      	; 0xd0 <timer1Config+0x1c>
+			setBit(reg2, WGM13);
+  cc:	90 61       	ori	r25, 0x10	; 16
+  ce:	01 c0       	rjmp	.+2      	; 0xd2 <timer1Config+0x1e>
+		else
+			clrBit(reg2, WGM13);
+  d0:	9f 7e       	andi	r25, 0xEF	; 239
+		if(isBitSet(mode, 2))
+  d2:	82 ff       	sbrs	r24, 2
+  d4:	02 c0       	rjmp	.+4      	; 0xda <timer1Config+0x26>
+			setBit(reg2, WGM12);
+  d6:	98 60       	ori	r25, 0x08	; 8
+  d8:	01 c0       	rjmp	.+2      	; 0xdc <timer1Config+0x28>
+		else
+			clrBit(reg2, WGM12);
+  da:	97 7f       	andi	r25, 0xF7	; 247
+		reg1 &= ~(0x03 << WGM10);
+		reg1 |= (mode & 0x03);
+  dc:	83 70       	andi	r24, 0x03	; 3
+			clrBit(reg2, WGM13);
+		if(isBitSet(mode, 2))
+			setBit(reg2, WGM12);
+		else
+			clrBit(reg2, WGM12);
+		reg1 &= ~(0x03 << WGM10);
+  de:	2c 7f       	andi	r18, 0xFC	; 252
+		reg1 |= (mode & 0x03);
+  e0:	28 2b       	or	r18, r24
+	}
+	TCCR1A = reg1;
+  e2:	20 93 80 00 	sts	0x0080, r18
+	TCCR1B = reg2;
+  e6:	90 93 81 00 	sts	0x0081, r25
+
+	return RESULT_OK;
+}
+  ea:	80 e0       	ldi	r24, 0x00	; 0
+  ec:	08 95       	ret
+
+000000ee <timer1ClearCompareAInterruptRequest>:
+ * Clears the timer1 compare A interrupt request
+ * -------------------------------------------------------------------------- */
+
+resultValue_t timer1ClearCompareAInterruptRequest(void)
+{
+	setBit(TIFR1, OCF1A);
+  ee:	b1 9a       	sbi	0x16, 1	; 22
+	return RESULT_OK;
+}
+  f0:	80 e0       	ldi	r24, 0x00	; 0
+  f2:	08 95       	ret
+
+000000f4 <timer1SetCompareAValue>:
+ * Sets the timer1 compare A value
+ * -------------------------------------------------------------------------- */
+
+resultValue_t timer1SetCompareAValue(uint16 value)
+{
+	ATOMIC_BLOCK(ATOMIC_RESTORESTATE){
+  f4:	2f b7       	in	r18, 0x3f	; 63
+    return 1;
+}
+
+static __inline__ uint8_t __iCliRetVal(void)
+{
+    cli();
+  f6:	f8 94       	cli
+		OCR1A = value;
+  f8:	90 93 89 00 	sts	0x0089, r25
+  fc:	80 93 88 00 	sts	0x0088, r24
+    (void)__s;
+}
+
+static __inline__ void __iRestore(const  uint8_t *__s)
+{
+    SREG = *__s;
+ 100:	2f bf       	out	0x3f, r18	; 63
+	}
+	return RESULT_OK;
+}
+ 102:	80 e0       	ldi	r24, 0x00	; 0
+ 104:	08 95       	ret
+
+00000106 <timer1SetCompareBValue>:
+ * Sets the timer1 compare B value
+ * -------------------------------------------------------------------------- */
+
+resultValue_t timer1SetCompareBValue(uint16 value)
+{
+	ATOMIC_BLOCK(ATOMIC_RESTORESTATE){
+ 106:	2f b7       	in	r18, 0x3f	; 63
+    return 1;
+}
+
+static __inline__ uint8_t __iCliRetVal(void)
+{
+    cli();
+ 108:	f8 94       	cli
+		OCR1B = value;
+ 10a:	90 93 8b 00 	sts	0x008B, r25
+ 10e:	80 93 8a 00 	sts	0x008A, r24
+    (void)__s;
+}
+
+static __inline__ void __iRestore(const  uint8_t *__s)
+{
+    SREG = *__s;
+ 112:	2f bf       	out	0x3f, r18	; 63
+	}
+	return RESULT_OK;
+}
+ 114:	80 e0       	ldi	r24, 0x00	; 0
+ 116:	08 95       	ret
+
+00000118 <adcConfig>:
+
+resultValue_t adcConfig(adcMode_t mode, adcReference_t reference, adcPrescaler_t  prescaler)
+{
+	uint8 reg = 0;
+
+	if(reference != ADC_REFERENCE_NO_CHANGE){
+ 118:	6f 3f       	cpi	r22, 0xFF	; 255
+ 11a:	51 f0       	breq	.+20     	; 0x130 <adcConfig+0x18>
+		reg = ADMUX;
+ 11c:	ec e7       	ldi	r30, 0x7C	; 124
+ 11e:	f0 e0       	ldi	r31, 0x00	; 0
+ 120:	90 81       	ld	r25, Z
+		reg &= ~(0x03 << REFS0);
+		reg |= reference << REFS0;
+ 122:	20 e4       	ldi	r18, 0x40	; 64
+ 124:	62 9f       	mul	r22, r18
+ 126:	b0 01       	movw	r22, r0
+ 128:	11 24       	eor	r1, r1
+{
+	uint8 reg = 0;
+
+	if(reference != ADC_REFERENCE_NO_CHANGE){
+		reg = ADMUX;
+		reg &= ~(0x03 << REFS0);
+ 12a:	9f 73       	andi	r25, 0x3F	; 63
+		reg |= reference << REFS0;
+ 12c:	69 2b       	or	r22, r25
+		ADMUX = reg;
+ 12e:	60 83       	st	Z, r22
+	}
+
+	if(prescaler != ADC_PRESCALER_NO_CHANGE){
+ 130:	4f 3f       	cpi	r20, 0xFF	; 255
+ 132:	31 f0       	breq	.+12     	; 0x140 <adcConfig+0x28>
+		reg = ADCSRA;
+ 134:	ea e7       	ldi	r30, 0x7A	; 122
+ 136:	f0 e0       	ldi	r31, 0x00	; 0
+ 138:	90 81       	ld	r25, Z
+		reg &= ~(0x07 << ADPS0);
+ 13a:	98 7f       	andi	r25, 0xF8	; 248
+		reg |= prescaler << ADPS0;
+ 13c:	49 2b       	or	r20, r25
+		ADCSRA = reg;
+ 13e:	40 83       	st	Z, r20
+	}
+
+	if(mode != ADC_MODE_NO_CHANGE){
+ 140:	8f 3f       	cpi	r24, 0xFF	; 255
+ 142:	69 f1       	breq	.+90     	; 0x19e <adcConfig+0x86>
+		if(mode == ADC_MODE_SINGLE_CONVERSION)
+ 144:	81 11       	cpse	r24, r1
+ 146:	07 c0       	rjmp	.+14     	; 0x156 <adcConfig+0x3e>
+			clrBit(ADCSRA, ADATE);
+ 148:	ea e7       	ldi	r30, 0x7A	; 122
+ 14a:	f0 e0       	ldi	r31, 0x00	; 0
+ 14c:	80 81       	ld	r24, Z
+ 14e:	8f 7d       	andi	r24, 0xDF	; 223
+ 150:	80 83       	st	Z, r24
+			ADCSRB = reg;
+			setBit(ADCSRA, ADATE);
+		}
+	}
+
+	return RESULT_OK;
+ 152:	80 e0       	ldi	r24, 0x00	; 0
+ 154:	08 95       	ret
+
+	if(mode != ADC_MODE_NO_CHANGE){
+		if(mode == ADC_MODE_SINGLE_CONVERSION)
+			clrBit(ADCSRA, ADATE);
+		else{
+			reg = ADCSRB;
+ 156:	90 91 7b 00 	lds	r25, 0x007B
+			reg &= ~(0x07 << ADTS0);
+ 15a:	29 2f       	mov	r18, r25
+ 15c:	28 7f       	andi	r18, 0xF8	; 248
+			switch(mode){
+ 15e:	90 e0       	ldi	r25, 0x00	; 0
+ 160:	fc 01       	movw	r30, r24
+ 162:	32 97       	sbiw	r30, 0x02	; 2
+ 164:	e7 30       	cpi	r30, 0x07	; 7
+ 166:	f1 05       	cpc	r31, r1
+ 168:	e0 f4       	brcc	.+56     	; 0x1a2 <adcConfig+0x8a>
+ 16a:	ec 5c       	subi	r30, 0xCC	; 204
+ 16c:	ff 4f       	sbci	r31, 0xFF	; 255
+ 16e:	0c 94 41 02 	jmp	0x482	; 0x482 <__tablejump2__>
+				case ADC_MODE_AUTO_ANALOG_COMP:		reg |= (1 << ADTS0);	break;
+ 172:	21 60       	ori	r18, 0x01	; 1
+ 174:	0b c0       	rjmp	.+22     	; 0x18c <adcConfig+0x74>
+				case ADC_MODE_AUTO_INT0:			reg |= (2 << ADTS0);	break;
+ 176:	22 60       	ori	r18, 0x02	; 2
+ 178:	09 c0       	rjmp	.+18     	; 0x18c <adcConfig+0x74>
+				case ADC_MODE_AUTO_TIMER0_COMPA:	reg |= (3 << ADTS0);	break;
+ 17a:	23 60       	ori	r18, 0x03	; 3
+ 17c:	07 c0       	rjmp	.+14     	; 0x18c <adcConfig+0x74>
+				case ADC_MODE_AUTO_TIMER0_OVERFLOW:	reg |= (4 << ADTS0);	break;
+ 17e:	24 60       	ori	r18, 0x04	; 4
+ 180:	05 c0       	rjmp	.+10     	; 0x18c <adcConfig+0x74>
+				case ADC_MODE_AUTO_TIMER1_COMPB:	reg |= (5 << ADTS0);	break;
+ 182:	25 60       	ori	r18, 0x05	; 5
+ 184:	03 c0       	rjmp	.+6      	; 0x18c <adcConfig+0x74>
+				case ADC_MODE_AUTO_TIMER1_OVERFLOW:	reg |= (6 << ADTS0);	break;
+ 186:	26 60       	ori	r18, 0x06	; 6
+ 188:	01 c0       	rjmp	.+2      	; 0x18c <adcConfig+0x74>
+				case ADC_MODE_AUTO_TIMER1_CAPTURE:	reg |= (7 << ADTS0);	break;
+ 18a:	27 60       	ori	r18, 0x07	; 7
+				default:							return RESULT_UNSUPPORTED_VALUE;	break;
+			}
+			ADCSRB = reg;
+ 18c:	20 93 7b 00 	sts	0x007B, r18
+			setBit(ADCSRA, ADATE);
+ 190:	ea e7       	ldi	r30, 0x7A	; 122
+ 192:	f0 e0       	ldi	r31, 0x00	; 0
+ 194:	80 81       	ld	r24, Z
+ 196:	80 62       	ori	r24, 0x20	; 32
+ 198:	80 83       	st	Z, r24
+		}
+	}
+
+	return RESULT_OK;
+ 19a:	80 e0       	ldi	r24, 0x00	; 0
+ 19c:	08 95       	ret
+ 19e:	80 e0       	ldi	r24, 0x00	; 0
+ 1a0:	08 95       	ret
+				case ADC_MODE_AUTO_TIMER0_COMPA:	reg |= (3 << ADTS0);	break;
+				case ADC_MODE_AUTO_TIMER0_OVERFLOW:	reg |= (4 << ADTS0);	break;
+				case ADC_MODE_AUTO_TIMER1_COMPB:	reg |= (5 << ADTS0);	break;
+				case ADC_MODE_AUTO_TIMER1_OVERFLOW:	reg |= (6 << ADTS0);	break;
+				case ADC_MODE_AUTO_TIMER1_CAPTURE:	reg |= (7 << ADTS0);	break;
+				default:							return RESULT_UNSUPPORTED_VALUE;	break;
+ 1a2:	87 e0       	ldi	r24, 0x07	; 7
+			setBit(ADCSRA, ADATE);
+		}
+	}
+
+	return RESULT_OK;
+ }
+ 1a4:	08 95       	ret
+
+000001a6 <adcEnable>:
+ * Enables the adc module
+ * -------------------------------------------------------------------------- */
+
+resultValue_t adcEnable(void)
+{
+	setBit(ADCSRA, ADEN);
+ 1a6:	ea e7       	ldi	r30, 0x7A	; 122
+ 1a8:	f0 e0       	ldi	r31, 0x00	; 0
+ 1aa:	80 81       	ld	r24, Z
+ 1ac:	80 68       	ori	r24, 0x80	; 128
+ 1ae:	80 83       	st	Z, r24
+
+	return RESULT_OK;
+}
+ 1b0:	80 e0       	ldi	r24, 0x00	; 0
+ 1b2:	08 95       	ret
+
+000001b4 <adcClearInterruptRequest>:
+ * Clears the adc interrupt request
+ * -------------------------------------------------------------------------- */
+
+resultValue_t adcClearInterruptRequest(void)
+{
+	setBit(ADCSRA, ADIF);
+ 1b4:	ea e7       	ldi	r30, 0x7A	; 122
+ 1b6:	f0 e0       	ldi	r31, 0x00	; 0
+ 1b8:	80 81       	ld	r24, Z
+ 1ba:	80 61       	ori	r24, 0x10	; 16
+ 1bc:	80 83       	st	Z, r24
+
+	return RESULT_OK;
+}
+ 1be:	80 e0       	ldi	r24, 0x00	; 0
+ 1c0:	08 95       	ret
+
+000001c2 <adcActivateInterrupt>:
+ * Enables the adc interrupt
+ * -------------------------------------------------------------------------- */
+
+resultValue_t adcActivateInterrupt(void)
+{
+	setBit(ADCSRA, ADIE);
+ 1c2:	ea e7       	ldi	r30, 0x7A	; 122
+ 1c4:	f0 e0       	ldi	r31, 0x00	; 0
+ 1c6:	80 81       	ld	r24, Z
+ 1c8:	88 60       	ori	r24, 0x08	; 8
+ 1ca:	80 83       	st	Z, r24
+
+	return RESULT_OK;
+}
+ 1cc:	80 e0       	ldi	r24, 0x00	; 0
+ 1ce:	08 95       	ret
+
+000001d0 <usartConfig>:
+/* -----------------------------------------------------------------------------
+ * Configures the USART controller
+ * -------------------------------------------------------------------------- */
+
+resultValue_t usartConfig(usartMode_t mode, usartBaudRate_t baudRate, usartDataBits_t dataBits, usartParity_t parity, usartStopBits_t stopBits)
+{
+ 1d0:	8f 92       	push	r8
+ 1d2:	9f 92       	push	r9
+ 1d4:	af 92       	push	r10
+ 1d6:	bf 92       	push	r11
+ 1d8:	cf 92       	push	r12
+ 1da:	df 92       	push	r13
+ 1dc:	ef 92       	push	r14
+ 1de:	ff 92       	push	r15
+ 1e0:	0f 93       	push	r16
+ 1e2:	4a 01       	movw	r8, r20
+ 1e4:	5b 01       	movw	r10, r22
+	uint8 reg1 = UCSR0A;
+ 1e6:	90 91 c0 00 	lds	r25, 0x00C0
+	uint8 reg2 = UCSR0B;
+ 1ea:	90 91 c1 00 	lds	r25, 0x00C1
+	uint8 reg3 = UCSR0C;
+ 1ee:	90 91 c2 00 	lds	r25, 0x00C2
+
+	// Clear errors
+	reg1 &= ~((1 << FE0) | (1 << DOR0) | (1 << UPE0));
+
+	// USART stop bits
+	if(stopBits != USART_STOP_BIT_NO_CHANGE){
+ 1f2:	9f ef       	ldi	r25, 0xFF	; 255
+ 1f4:	e9 16       	cp	r14, r25
+ 1f6:	21 f0       	breq	.+8      	; 0x200 <usartConfig+0x30>
+		switch(stopBits){
+ 1f8:	91 e0       	ldi	r25, 0x01	; 1
+ 1fa:	9e 15       	cp	r25, r14
+ 1fc:	08 f4       	brcc	.+2      	; 0x200 <usartConfig+0x30>
+ 1fe:	7d c0       	rjmp	.+250    	; 0x2fa <usartConfig+0x12a>
+			default:					return RESULT_UNSUPPORTED_VALUE;	break;
+		}
+	}
+
+	// USART parity bits
+	if(parity != USART_PARITY_NO_CHANGE){
+ 200:	0f 3f       	cpi	r16, 0xFF	; 255
+ 202:	19 f0       	breq	.+6      	; 0x20a <usartConfig+0x3a>
+		reg3 &= ~(0x03 << UPM00);
+		switch(parity){
+ 204:	03 30       	cpi	r16, 0x03	; 3
+ 206:	08 f0       	brcs	.+2      	; 0x20a <usartConfig+0x3a>
+ 208:	7a c0       	rjmp	.+244    	; 0x2fe <usartConfig+0x12e>
+			default:					return RESULT_USART_PARITY_UNSUPORTED;	break;
+		}
+	}
+
+	// USART data bits
+	if(dataBits != USART_DATA_BITS_NO_CHANGE){
+ 20a:	2f 3f       	cpi	r18, 0xFF	; 255
+ 20c:	19 f0       	breq	.+6      	; 0x214 <usartConfig+0x44>
+		clrBit(reg2, UCSZ02);
+		reg3 &= ~(0x03 << UCSZ00);
+		switch(dataBits){
+ 20e:	25 30       	cpi	r18, 0x05	; 5
+ 210:	08 f0       	brcs	.+2      	; 0x214 <usartConfig+0x44>
+ 212:	77 c0       	rjmp	.+238    	; 0x302 <usartConfig+0x132>
+			break;
+		}
+	}
+
+	// USART mode
+	if(mode != USART_MODE_NO_CHANGE){
+ 214:	8f 3f       	cpi	r24, 0xFF	; 255
+ 216:	89 f4       	brne	.+34     	; 0x23a <usartConfig+0x6a>
+			reg3 |= (3 << UMSEL00);		// Synchronous SPI Mode
+			setBit(reg3, UCPOL0);		// Polarity
+			break;
+		}
+	}else{
+		aux8 = (0x03 & (UCSR0C >> UMSEL00));
+ 218:	80 91 c2 00 	lds	r24, 0x00C2
+ 21c:	82 95       	swap	r24
+ 21e:	86 95       	lsr	r24
+ 220:	86 95       	lsr	r24
+ 222:	83 70       	andi	r24, 0x03	; 3
+		switch(aux8){
+ 224:	21 f0       	breq	.+8      	; 0x22e <usartConfig+0x5e>
+ 226:	83 30       	cpi	r24, 0x03	; 3
+ 228:	09 f4       	brne	.+2      	; 0x22c <usartConfig+0x5c>
+ 22a:	6f c0       	rjmp	.+222    	; 0x30a <usartConfig+0x13a>
+ 22c:	05 c0       	rjmp	.+10     	; 0x238 <usartConfig+0x68>
+		case 0:	// Asynchronous mode
+			if(isBitClr(UCSR0A, U2X0)){	// Single speed
+ 22e:	80 91 c0 00 	lds	r24, 0x00C0
+ 232:	86 95       	lsr	r24
+ 234:	81 70       	andi	r24, 0x01	; 1
+ 236:	01 c0       	rjmp	.+2      	; 0x23a <usartConfig+0x6a>
+resultValue_t usartConfig(usartMode_t mode, usartBaudRate_t baudRate, usartDataBits_t dataBits, usartParity_t parity, usartStopBits_t stopBits)
+{
+	uint8 reg1 = UCSR0A;
+	uint8 reg2 = UCSR0B;
+	uint8 reg3 = UCSR0C;
+	uint8 modeAux = 0;
+ 238:	80 e0       	ldi	r24, 0x00	; 0
+			modeAux = USART_MODE_SYNCHRONOUS_SPI;
+			break;
+		}
+	}
+
+	if(baudRate != USART_BAUD_NO_CHANGE){
+ 23a:	9f ef       	ldi	r25, 0xFF	; 255
+ 23c:	89 16       	cp	r8, r25
+ 23e:	99 06       	cpc	r9, r25
+ 240:	a9 06       	cpc	r10, r25
+ 242:	b9 06       	cpc	r11, r25
+ 244:	09 f4       	brne	.+2      	; 0x248 <usartConfig+0x78>
+ 246:	5f c0       	rjmp	.+190    	; 0x306 <usartConfig+0x136>
+		switch(modeAux){
+ 248:	81 30       	cpi	r24, 0x01	; 1
+ 24a:	b9 f0       	breq	.+46     	; 0x27a <usartConfig+0xaa>
+ 24c:	18 f0       	brcs	.+6      	; 0x254 <usartConfig+0x84>
+ 24e:	84 30       	cpi	r24, 0x04	; 4
+ 250:	39 f1       	breq	.+78     	; 0x2a0 <usartConfig+0xd0>
+ 252:	39 c0       	rjmp	.+114    	; 0x2c6 <usartConfig+0xf6>
+		case USART_MODE_ASYNCHRONOUS:
+			aux64 = (F_CPU / 16 / baudRate) - 1;
+ 254:	60 e4       	ldi	r22, 0x40	; 64
+ 256:	72 e4       	ldi	r23, 0x42	; 66
+ 258:	8f e0       	ldi	r24, 0x0F	; 15
+ 25a:	90 e0       	ldi	r25, 0x00	; 0
+ 25c:	a5 01       	movw	r20, r10
+ 25e:	94 01       	movw	r18, r8
+ 260:	0e 94 1f 02 	call	0x43e	; 0x43e <__udivmodsi4>
+ 264:	da 01       	movw	r26, r20
+ 266:	c9 01       	movw	r24, r18
+ 268:	01 97       	sbiw	r24, 0x01	; 1
+ 26a:	a1 09       	sbc	r26, r1
+ 26c:	b1 09       	sbc	r27, r1
+ 26e:	4c 01       	movw	r8, r24
+ 270:	5d 01       	movw	r10, r26
+ 272:	c1 2c       	mov	r12, r1
+ 274:	d1 2c       	mov	r13, r1
+ 276:	76 01       	movw	r14, r12
+			break;
+ 278:	2e c0       	rjmp	.+92     	; 0x2d6 <usartConfig+0x106>
+		case USART_MODE_ASYNCHRONOUS_DOUBLE_SPEED:
+			aux64 = (F_CPU / 8 / baudRate) - 1;
+ 27a:	60 e8       	ldi	r22, 0x80	; 128
+ 27c:	74 e8       	ldi	r23, 0x84	; 132
+ 27e:	8e e1       	ldi	r24, 0x1E	; 30
+ 280:	90 e0       	ldi	r25, 0x00	; 0
+ 282:	a5 01       	movw	r20, r10
+ 284:	94 01       	movw	r18, r8
+ 286:	0e 94 1f 02 	call	0x43e	; 0x43e <__udivmodsi4>
+ 28a:	da 01       	movw	r26, r20
+ 28c:	c9 01       	movw	r24, r18
+ 28e:	01 97       	sbiw	r24, 0x01	; 1
+ 290:	a1 09       	sbc	r26, r1
+ 292:	b1 09       	sbc	r27, r1
+ 294:	4c 01       	movw	r8, r24
+ 296:	5d 01       	movw	r10, r26
+ 298:	c1 2c       	mov	r12, r1
+ 29a:	d1 2c       	mov	r13, r1
+ 29c:	76 01       	movw	r14, r12
+			break;
+ 29e:	1b c0       	rjmp	.+54     	; 0x2d6 <usartConfig+0x106>
+		case USART_MODE_SYNCHRONOUS_SPI:
+			aux64 = (F_CPU / 2 / baudRate) - 1;
+ 2a0:	60 e0       	ldi	r22, 0x00	; 0
+ 2a2:	72 e1       	ldi	r23, 0x12	; 18
+ 2a4:	8a e7       	ldi	r24, 0x7A	; 122
+ 2a6:	90 e0       	ldi	r25, 0x00	; 0
+ 2a8:	a5 01       	movw	r20, r10
+ 2aa:	94 01       	movw	r18, r8
+ 2ac:	0e 94 1f 02 	call	0x43e	; 0x43e <__udivmodsi4>
+ 2b0:	da 01       	movw	r26, r20
+ 2b2:	c9 01       	movw	r24, r18
+ 2b4:	01 97       	sbiw	r24, 0x01	; 1
+ 2b6:	a1 09       	sbc	r26, r1
+ 2b8:	b1 09       	sbc	r27, r1
+ 2ba:	4c 01       	movw	r8, r24
+ 2bc:	5d 01       	movw	r10, r26
+ 2be:	c1 2c       	mov	r12, r1
+ 2c0:	d1 2c       	mov	r13, r1
+ 2c2:	76 01       	movw	r14, r12
+			break;
+ 2c4:	08 c0       	rjmp	.+16     	; 0x2d6 <usartConfig+0x106>
+	uint8 reg1 = UCSR0A;
+	uint8 reg2 = UCSR0B;
+	uint8 reg3 = UCSR0C;
+	uint8 modeAux = 0;
+	uint8 aux8 = 0;
+	uint64 aux64 = 0;
+ 2c6:	81 2c       	mov	r8, r1
+ 2c8:	91 2c       	mov	r9, r1
+ 2ca:	a1 2c       	mov	r10, r1
+ 2cc:	b1 2c       	mov	r11, r1
+ 2ce:	c1 2c       	mov	r12, r1
+ 2d0:	d1 2c       	mov	r13, r1
+ 2d2:	e1 2c       	mov	r14, r1
+ 2d4:	f1 2c       	mov	r15, r1
+			aux64 = (F_CPU / 2 / baudRate) - 1;
+			break;
+		}
+//		if((aux64 > (1.05 * baudRate)) || (aux64 < (0.95 * baudRate)))
+//			return RESULT_USART_BAUD_RATE_UNSUPORTED;
+		UBRR0H = 0x0F & (aux64 >> 8);
+ 2d6:	28 2d       	mov	r18, r8
+ 2d8:	39 2d       	mov	r19, r9
+ 2da:	4a 2d       	mov	r20, r10
+ 2dc:	5b 2d       	mov	r21, r11
+ 2de:	6c 2d       	mov	r22, r12
+ 2e0:	7d 2d       	mov	r23, r13
+ 2e2:	8e 2d       	mov	r24, r14
+ 2e4:	9f 2d       	mov	r25, r15
+ 2e6:	08 e0       	ldi	r16, 0x08	; 8
+ 2e8:	0e 94 49 02 	call	0x492	; 0x492 <__lshrdi3>
+ 2ec:	2f 70       	andi	r18, 0x0F	; 15
+ 2ee:	20 93 c5 00 	sts	0x00C5, r18
+		UBRR0L = (0xFF & aux64);
+ 2f2:	80 92 c4 00 	sts	0x00C4, r8
+	}
+
+	return RESULT_OK;
+ 2f6:	80 e0       	ldi	r24, 0x00	; 0
+ 2f8:	0f c0       	rjmp	.+30     	; 0x318 <usartConfig+0x148>
+	// USART stop bits
+	if(stopBits != USART_STOP_BIT_NO_CHANGE){
+		switch(stopBits){
+			case USART_STOP_BIT_SINGLE:	clrBit(reg3, USBS0);				break;
+			case USART_STOP_BIT_DOUBLE:	setBit(reg3, USBS0);				break;
+			default:					return RESULT_UNSUPPORTED_VALUE;	break;
+ 2fa:	87 e0       	ldi	r24, 0x07	; 7
+ 2fc:	0d c0       	rjmp	.+26     	; 0x318 <usartConfig+0x148>
+		reg3 &= ~(0x03 << UPM00);
+		switch(parity){
+			case USART_PARITY_NONE:		break;
+			case USART_PARITY_EVEN:		reg3 |= (0x02 << UPM00);	break;
+			case USART_PARITY_ODD:		reg3 |= (0x03 << UPM00);	break;
+			case USART_PARITY_MARK:		return RESULT_USART_PARITY_UNSUPORTED;	break;
+ 2fe:	85 e0       	ldi	r24, 0x05	; 5
+ 300:	0b c0       	rjmp	.+22     	; 0x318 <usartConfig+0x148>
+		case USART_DATA_BITS_9:
+			setBit(reg2, UCSZ02);
+			reg3 |= (0x03 << UCSZ00);
+			break;
+		default:
+			return RESULT_USART_PARITY_UNSUPORTED;
+ 302:	85 e0       	ldi	r24, 0x05	; 5
+ 304:	09 c0       	rjmp	.+18     	; 0x318 <usartConfig+0x148>
+//			return RESULT_USART_BAUD_RATE_UNSUPORTED;
+		UBRR0H = 0x0F & (aux64 >> 8);
+		UBRR0L = (0xFF & aux64);
+	}
+
+	return RESULT_OK;
+ 306:	80 e0       	ldi	r24, 0x00	; 0
+ 308:	07 c0       	rjmp	.+14     	; 0x318 <usartConfig+0x148>
+			modeAux = USART_MODE_SYNCHRONOUS_SPI;
+			break;
+		}
+	}
+
+	if(baudRate != USART_BAUD_NO_CHANGE){
+ 30a:	8f ef       	ldi	r24, 0xFF	; 255
+ 30c:	88 16       	cp	r8, r24
+ 30e:	98 06       	cpc	r9, r24
+ 310:	a8 06       	cpc	r10, r24
+ 312:	b8 06       	cpc	r11, r24
+ 314:	29 f6       	brne	.-118    	; 0x2a0 <usartConfig+0xd0>
+//			return RESULT_USART_BAUD_RATE_UNSUPORTED;
+		UBRR0H = 0x0F & (aux64 >> 8);
+		UBRR0L = (0xFF & aux64);
+	}
+
+	return RESULT_OK;
+ 316:	80 e0       	ldi	r24, 0x00	; 0
+}
+ 318:	0f 91       	pop	r16
+ 31a:	ff 90       	pop	r15
+ 31c:	ef 90       	pop	r14
+ 31e:	df 90       	pop	r13
+ 320:	cf 90       	pop	r12
+ 322:	bf 90       	pop	r11
+ 324:	af 90       	pop	r10
+ 326:	9f 90       	pop	r9
+ 328:	8f 90       	pop	r8
+ 32a:	08 95       	ret
+
+0000032c <usartEnableTransmitter>:
+ * Enables USART transmission module
+ * -------------------------------------------------------------------------- */
+
+resultValue_t usartEnableTransmitter(void)
+{
+	setBit(UCSR0B, TXEN0);
+ 32c:	e1 ec       	ldi	r30, 0xC1	; 193
+ 32e:	f0 e0       	ldi	r31, 0x00	; 0
+ 330:	80 81       	ld	r24, Z
+ 332:	88 60       	ori	r24, 0x08	; 8
+ 334:	80 83       	st	Z, r24
+	return RESULT_OK;
+}
+ 336:	80 e0       	ldi	r24, 0x00	; 0
+ 338:	08 95       	ret
+
+0000033a <usartIsBufferEmpty>:
+ * Checks if the buffer is empty
+ * -------------------------------------------------------------------------- */
+
+bool_t usartIsBufferEmpty(void)
+{
+	return isBitSet(UCSR0A, UDRE0);
+ 33a:	80 91 c0 00 	lds	r24, 0x00C0
+}
+ 33e:	85 fb       	bst	r24, 5
+ 340:	88 27       	eor	r24, r24
+ 342:	80 f9       	bld	r24, 0
+ 344:	08 95       	ret
+
+00000346 <usartTransmit>:
+/* -----------------------------------------------------------------------------
+ * Transmits data in 5, 6, 7 or 8 bits modes using the USART controller
+ * -------------------------------------------------------------------------- */
+
+resultValue_t usartTransmit(int8 data)
+{
+ 346:	cf 93       	push	r28
+ 348:	c8 2f       	mov	r28, r24
+	while(!usartIsBufferEmpty())
+ 34a:	0e 94 9d 01 	call	0x33a	; 0x33a <usartIsBufferEmpty>
+ 34e:	88 23       	and	r24, r24
+ 350:	e1 f3       	breq	.-8      	; 0x34a <usartTransmit+0x4>
+		;	// Waits until last transmission ends
+	UDR0 = data;
+ 352:	c0 93 c6 00 	sts	0x00C6, r28
+	return RESULT_OK;
+}
+ 356:	80 e0       	ldi	r24, 0x00	; 0
+ 358:	cf 91       	pop	r28
+ 35a:	08 95       	ret
+
+0000035c <main>:
+	// Variable declaration
+	int8 angle = 0;
+	uint8 aux8 = 0;
+
+	// Variable initialization
+	systemFlags.allFlags = 0;
+ 35c:	10 92 00 01 	sts	0x0100, r1
+	
+	// USART configuration
+	usartConfig(USART_MODE_ASYNCHRONOUS, USART_BAUD_9600, USART_DATA_BITS_8, USART_PARITY_NONE, USART_STOP_BIT_SINGLE);
+ 360:	e1 2c       	mov	r14, r1
+ 362:	00 e0       	ldi	r16, 0x00	; 0
+ 364:	23 e0       	ldi	r18, 0x03	; 3
+ 366:	40 e8       	ldi	r20, 0x80	; 128
+ 368:	55 e2       	ldi	r21, 0x25	; 37
+ 36a:	60 e0       	ldi	r22, 0x00	; 0
+ 36c:	70 e0       	ldi	r23, 0x00	; 0
+ 36e:	80 e0       	ldi	r24, 0x00	; 0
+ 370:	0e 94 e8 00 	call	0x1d0	; 0x1d0 <usartConfig>
+	usartEnableTransmitter();
+ 374:	0e 94 96 01 	call	0x32c	; 0x32c <usartEnableTransmitter>
+
+	// TIMER1 configuration
+	timer1SetCompareAValue(1561);
+ 378:	89 e1       	ldi	r24, 0x19	; 25
+ 37a:	96 e0       	ldi	r25, 0x06	; 6
+ 37c:	0e 94 7a 00 	call	0xf4	; 0xf4 <timer1SetCompareAValue>
+	timer1SetCompareBValue(1561);
+ 380:	89 e1       	ldi	r24, 0x19	; 25
+ 382:	96 e0       	ldi	r25, 0x06	; 6
+ 384:	0e 94 83 00 	call	0x106	; 0x106 <timer1SetCompareBValue>
+	timer1Config(TIMER_B_MODE_CTC, TIMER_A_PRESCALER_1024);
+ 388:	65 e0       	ldi	r22, 0x05	; 5
+ 38a:	84 e0       	ldi	r24, 0x04	; 4
+ 38c:	0e 94 5a 00 	call	0xb4	; 0xb4 <timer1Config>
+
+	// ADC confoguration
+	adcConfig(ADC_MODE_AUTO_TIMER1_COMPB, ADC_REFERENCE_POWER_SUPPLY, ADC_PRESCALER_128);
+ 390:	47 e0       	ldi	r20, 0x07	; 7
+ 392:	61 e0       	ldi	r22, 0x01	; 1
+ 394:	86 e0       	ldi	r24, 0x06	; 6
+ 396:	0e 94 8c 00 	call	0x118	; 0x118 <adcConfig>
+	adcEnable();
+ 39a:	0e 94 d3 00 	call	0x1a6	; 0x1a6 <adcEnable>
+	adcClearInterruptRequest();
+ 39e:	0e 94 da 00 	call	0x1b4	; 0x1b4 <adcClearInterruptRequest>
+	adcActivateInterrupt();
+ 3a2:	0e 94 e1 00 	call	0x1c2	; 0x1c2 <adcActivateInterrupt>
+	timer1ClearCompareAInterruptRequest();
+ 3a6:	0e 94 77 00 	call	0xee	; 0xee <timer1ClearCompareAInterruptRequest>
+
+	// Enable Global Interrupts
+	sei();
+ 3aa:	78 94       	sei
+
+	while(1){
+		if(systemFlags.transmit){
+			// Convert adc to angle
+			angle = (int8)(((rawAdc * 45) / 256) - 90);
+ 3ac:	cd e2       	ldi	r28, 0x2D	; 45
+
+	// Enable Global Interrupts
+	sei();
+
+	while(1){
+		if(systemFlags.transmit){
+ 3ae:	80 91 00 01 	lds	r24, 0x0100
+ 3b2:	80 ff       	sbrs	r24, 0
+ 3b4:	fc cf       	rjmp	.-8      	; 0x3ae <main+0x52>
+			// Convert adc to angle
+			angle = (int8)(((rawAdc * 45) / 256) - 90);
+ 3b6:	20 91 01 01 	lds	r18, 0x0101
+ 3ba:	30 91 02 01 	lds	r19, 0x0102
+ 3be:	c2 9f       	mul	r28, r18
+ 3c0:	c0 01       	movw	r24, r0
+ 3c2:	c3 9f       	mul	r28, r19
+ 3c4:	90 0d       	add	r25, r0
+ 3c6:	11 24       	eor	r1, r1
+//				aux8 |= abs(angle);
+//			}else{
+//				aux8 = angle;
+//			}
+			// Transmit data
+			usartTransmit(angle);
+ 3c8:	86 ea       	ldi	r24, 0xA6	; 166
+ 3ca:	89 0f       	add	r24, r25
+ 3cc:	0e 94 a3 01 	call	0x346	; 0x346 <usartTransmit>
+			systemFlags.transmit = FALSE;
+ 3d0:	80 91 00 01 	lds	r24, 0x0100
+ 3d4:	8e 7f       	andi	r24, 0xFE	; 254
+ 3d6:	80 93 00 01 	sts	0x0100, r24
+ 3da:	e9 cf       	rjmp	.-46     	; 0x3ae <main+0x52>
+
+000003dc <__vector_21>:
+
+// -----------------------------------------------------------------------------
+// Interruption handlers -------------------------------------------------------
+
+ISR(ADC_vect)
+{
+ 3dc:	1f 92       	push	r1
+ 3de:	0f 92       	push	r0
+ 3e0:	0f b6       	in	r0, 0x3f	; 63
+ 3e2:	0f 92       	push	r0
+ 3e4:	11 24       	eor	r1, r1
+ 3e6:	2f 93       	push	r18
+ 3e8:	3f 93       	push	r19
+ 3ea:	4f 93       	push	r20
+ 3ec:	5f 93       	push	r21
+ 3ee:	6f 93       	push	r22
+ 3f0:	7f 93       	push	r23
+ 3f2:	8f 93       	push	r24
+ 3f4:	9f 93       	push	r25
+ 3f6:	af 93       	push	r26
+ 3f8:	bf 93       	push	r27
+ 3fa:	ef 93       	push	r30
+ 3fc:	ff 93       	push	r31
+	rawAdc = ADC;
+ 3fe:	80 91 78 00 	lds	r24, 0x0078
+ 402:	90 91 79 00 	lds	r25, 0x0079
+ 406:	90 93 02 01 	sts	0x0102, r25
+ 40a:	80 93 01 01 	sts	0x0101, r24
+	timer1ClearCompareAInterruptRequest();
+ 40e:	0e 94 77 00 	call	0xee	; 0xee <timer1ClearCompareAInterruptRequest>
+	systemFlags.transmit = TRUE;
+ 412:	80 91 00 01 	lds	r24, 0x0100
+ 416:	81 60       	ori	r24, 0x01	; 1
+ 418:	80 93 00 01 	sts	0x0100, r24
+}
+ 41c:	ff 91       	pop	r31
+ 41e:	ef 91       	pop	r30
+ 420:	bf 91       	pop	r27
+ 422:	af 91       	pop	r26
+ 424:	9f 91       	pop	r25
+ 426:	8f 91       	pop	r24
+ 428:	7f 91       	pop	r23
+ 42a:	6f 91       	pop	r22
+ 42c:	5f 91       	pop	r21
+ 42e:	4f 91       	pop	r20
+ 430:	3f 91       	pop	r19
+ 432:	2f 91       	pop	r18
+ 434:	0f 90       	pop	r0
+ 436:	0f be       	out	0x3f, r0	; 63
+ 438:	0f 90       	pop	r0
+ 43a:	1f 90       	pop	r1
+ 43c:	18 95       	reti
+
+0000043e <__udivmodsi4>:
+ 43e:	a1 e2       	ldi	r26, 0x21	; 33
+ 440:	1a 2e       	mov	r1, r26
+ 442:	aa 1b       	sub	r26, r26
+ 444:	bb 1b       	sub	r27, r27
+ 446:	fd 01       	movw	r30, r26
+ 448:	0d c0       	rjmp	.+26     	; 0x464 <__udivmodsi4_ep>
+
+0000044a <__udivmodsi4_loop>:
+ 44a:	aa 1f       	adc	r26, r26
+ 44c:	bb 1f       	adc	r27, r27
+ 44e:	ee 1f       	adc	r30, r30
+ 450:	ff 1f       	adc	r31, r31
+ 452:	a2 17       	cp	r26, r18
+ 454:	b3 07       	cpc	r27, r19
+ 456:	e4 07       	cpc	r30, r20
+ 458:	f5 07       	cpc	r31, r21
+ 45a:	20 f0       	brcs	.+8      	; 0x464 <__udivmodsi4_ep>
+ 45c:	a2 1b       	sub	r26, r18
+ 45e:	b3 0b       	sbc	r27, r19
+ 460:	e4 0b       	sbc	r30, r20
+ 462:	f5 0b       	sbc	r31, r21
+
+00000464 <__udivmodsi4_ep>:
+ 464:	66 1f       	adc	r22, r22
+ 466:	77 1f       	adc	r23, r23
+ 468:	88 1f       	adc	r24, r24
+ 46a:	99 1f       	adc	r25, r25
+ 46c:	1a 94       	dec	r1
+ 46e:	69 f7       	brne	.-38     	; 0x44a <__udivmodsi4_loop>
+ 470:	60 95       	com	r22
+ 472:	70 95       	com	r23
+ 474:	80 95       	com	r24
+ 476:	90 95       	com	r25
+ 478:	9b 01       	movw	r18, r22
+ 47a:	ac 01       	movw	r20, r24
+ 47c:	bd 01       	movw	r22, r26
+ 47e:	cf 01       	movw	r24, r30
+ 480:	08 95       	ret
+
+00000482 <__tablejump2__>:
+ 482:	ee 0f       	add	r30, r30
+ 484:	ff 1f       	adc	r31, r31
+
+00000486 <__tablejump__>:
+ 486:	05 90       	lpm	r0, Z+
+ 488:	f4 91       	lpm	r31, Z
+ 48a:	e0 2d       	mov	r30, r0
+ 48c:	09 94       	ijmp
+
+0000048e <__ashrdi3>:
+ 48e:	97 fb       	bst	r25, 7
+ 490:	10 f8       	bld	r1, 0
+
+00000492 <__lshrdi3>:
+ 492:	16 94       	lsr	r1
+ 494:	00 08       	sbc	r0, r0
+ 496:	0f 93       	push	r16
+ 498:	08 30       	cpi	r16, 0x08	; 8
+ 49a:	98 f0       	brcs	.+38     	; 0x4c2 <__lshrdi3+0x30>
+ 49c:	08 50       	subi	r16, 0x08	; 8
+ 49e:	23 2f       	mov	r18, r19
+ 4a0:	34 2f       	mov	r19, r20
+ 4a2:	45 2f       	mov	r20, r21
+ 4a4:	56 2f       	mov	r21, r22
+ 4a6:	67 2f       	mov	r22, r23
+ 4a8:	78 2f       	mov	r23, r24
+ 4aa:	89 2f       	mov	r24, r25
+ 4ac:	90 2d       	mov	r25, r0
+ 4ae:	f4 cf       	rjmp	.-24     	; 0x498 <__lshrdi3+0x6>
+ 4b0:	05 94       	asr	r0
+ 4b2:	97 95       	ror	r25
+ 4b4:	87 95       	ror	r24
+ 4b6:	77 95       	ror	r23
+ 4b8:	67 95       	ror	r22
+ 4ba:	57 95       	ror	r21
+ 4bc:	47 95       	ror	r20
+ 4be:	37 95       	ror	r19
+ 4c0:	27 95       	ror	r18
+ 4c2:	0a 95       	dec	r16
+ 4c4:	aa f7       	brpl	.-22     	; 0x4b0 <__lshrdi3+0x1e>
+ 4c6:	0f 91       	pop	r16
+ 4c8:	08 95       	ret
+
+000004ca <_exit>:
+ 4ca:	f8 94       	cli
+
+000004cc <__stop_program>:
+ 4cc:	ff cf       	rjmp	.-2      	; 0x4cc <__stop_program>

@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Atmel Studio Solution File, Format Version 11.00
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "controlador", "controlador\controlador.cproj", "{E1EA0CAC-CF30-44D3-ACB2-E81D3582C855}"
+EndProject
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "remoto", "remoto\remoto.cproj", "{E9404F7A-8517-4AAD-8604-70558F3A7384}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E1EA0CAC-CF30-44D3-ACB2-E81D3582C855}.Debug|AVR.ActiveCfg = Debug|AVR
+		{E1EA0CAC-CF30-44D3-ACB2-E81D3582C855}.Debug|AVR.Build.0 = Debug|AVR
+		{E1EA0CAC-CF30-44D3-ACB2-E81D3582C855}.Release|AVR.ActiveCfg = Release|AVR
+		{E1EA0CAC-CF30-44D3-ACB2-E81D3582C855}.Release|AVR.Build.0 = Release|AVR
+		{E9404F7A-8517-4AAD-8604-70558F3A7384}.Debug|AVR.ActiveCfg = Debug|AVR
+		{E9404F7A-8517-4AAD-8604-70558F3A7384}.Debug|AVR.Build.0 = Debug|AVR
+		{E9404F7A-8517-4AAD-8604-70558F3A7384}.Release|AVR.ActiveCfg = Release|AVR
+		{E9404F7A-8517-4AAD-8604-70558F3A7384}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
